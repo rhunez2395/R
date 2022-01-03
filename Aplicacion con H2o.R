@@ -1,11 +1,3 @@
-##############################################
-##### DMC : Metodos supervisados H2o    #####
-##### Profesor: Daniel Chavez Gallo      #####
-##### Fecha: 04092020                    #####
-##############################################
-
-#-------------------------------------------------------------------------------------------------------------------#
-
 ########################------------------- CASO ----------------------###############################
 ######################################################################################################
 #####################  Prediccion de fuga de clientes de una entidad financiera  #####################
@@ -99,7 +91,7 @@ h2o.table(D_h2o$Fuga)
 h2o.mean(D_h2o$Fuga) # proporcion estimada de Fugados
 
 # Construyendo el primer algoritmo 
-  # definición de etiquetas, target y demas.
+  # definiciÃ³n de etiquetas, target y demas.
 y = "Fuga"
 x = setdiff(h2o.colnames(D_h2o), y) # las etiquetas complemento
 x
